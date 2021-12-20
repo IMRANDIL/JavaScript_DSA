@@ -37,12 +37,16 @@ const same = (arr1, arr2) => {
         if (!(key ** 2 in frequencyCounter2)) {
             return console.log(false);
         }
+        console.log(frequencyCounter1[key ** 2]);
+
+        // console.log(frequencyCounter1[key]);
+        // console.log(frequencyCounter2[key**2]);
         if (frequencyCounter2[key ** 2] !== frequencyCounter1[key]) {
             return console.log(false);
         }
     }
-    console.log(frequencyCounter1);
-    console.log(frequencyCounter2);
+    // console.log(frequencyCounter1);
+    // console.log(frequencyCounter2);
     return console.log(true);
 }
 
